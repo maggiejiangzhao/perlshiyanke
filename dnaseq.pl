@@ -1,10 +1,8 @@
 #!/usr/bin/perl -w
-$DNA1 = 'ACGGGAGGACGGGAAAATTACTACGGCATTAGC';
-$DNA2 = 'ATAGTCCGTGAGATGTAGTA';
-print "Here are the original two DNA fragments:\n\n";
-print $DNA1,"\n";
-print $DNA2,"\n\n";
-$DNA3 = "$DNA1$DNA2";
-print "Here is the concatenation of the first two fragments:\n\n";
-print "$DNA3\n\n";
+$DNA = 'ACGGGAGGACGGGAAAATTACTACGGCATTAGC';
+print "Here is the starting DNA:\n\n";
+print $DNA\n\n";
+$RNA=$DNA;
+print "Here is the result of transcribing the DNA to RNA:\n\n";
+print "$RNA\n";
 exit;
