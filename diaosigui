@@ -1,0 +1,37 @@
+#!/D/strawberry/perl/bin/perl -w
+use strict;
+use warnings;
+$b = 90;
+$a = "=" x $b;
+print "\n";
+print "\n";
+print "\n";
+print $a,"\n";
+print "\n";
+print "\n";
+print "=======================================User register======================================\n";
+print "\n";
+print "\n";
+print $a,"\n";
+print "\n";
+print "\n";
+print "\n";
+print $a,"\n";
+print "Username: \n";
+my $username = <STDIN>;
+chomp $username;
+unless ($username =~ /^(?!_)(?!.*?_$)[a-zA-Z0-9_\u4e00-\u9fa5]+$/) {
+   print "The user name format error!!!!\n";
+   exit;
+}
+system "stty -echo";
+print "password: \n";
+my $passwd = <STDIN>;
+chomp $passwd;
+print $a,"\n";
+if ($passwd =~ /^[a-zA-Z]\w{5,17}$/) {
+  print "Now you can play the game!!!!\n";
+} else {
+  print "The password format error!\n";
+}
+exit;
