@@ -1,0 +1,11 @@
+my $count;
+for ( my $i=0;$i<10;$i++){
+      if ($word1 cmp $word2) {$count++;}
+}
+print $count;
+if ( $count <= 6 ）｛
+      print "you should accumulation more English words !\n\n";
+} else {
+  printf " Congratulations ! your performance is above the average.\n\n";
+}
+exit;
